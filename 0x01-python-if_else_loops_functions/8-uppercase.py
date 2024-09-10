@@ -9,6 +9,6 @@ def uppercase(str):
             # Convert lower to upper by - 32 from ASCII
             c = chr(ord(c) - 32)
         # Print the char w/out a newline
-        print('{}'.format(c), end="")
+        print("{}".format(c), end="")
     # Print a newline after the string is fully printed
     print()
