@@ -13,7 +13,7 @@ def uppercase(str):
             c = chr(ord(c) - 32)
 
         # Print the character without a newline
-        print("{}".format(c), end="")
+        print('{}'.format(c), end="")
 
     # Print a newline after the string is fully printed
     print()
