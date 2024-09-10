@@ -1,19 +1,16 @@
 #!/usr/bin/python3
 
-# Print a string in uppercase followed by a new line
+# Prints a string in uppercase followed by a new line
 def uppercase(str):
-
-    # Iterate over each char in the string
+    result = ""
+    # Single loop to iterate over each char in the string
     for c in str:
-
-        # Check if the char is lowercase w/ ASCII value
+        # Check if the char is lowercase using ASCII
         if ord(c) >= 97 and ord(c) <= 122:
-
-            # Convert lower to uppercase by - 32 from ASCII
-            c = chr(ord(c) - 32)
-
-        # Print the character without a newline
-        print('{}'.format(c), end="")
-
-    # Print a newline after the string is fully printed
-    print()
+            # Convert lower to upper by - 32 from ASCII
+            result += chr(ord(c) - 32)
+        else:
+            # Append the char as it is if it's not lowercase
+            result += c
+    # Print the entire result string followed by a newline
+    print(f"{result}")
