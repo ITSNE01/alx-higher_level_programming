@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__";
+if __name__ == "__main__":
     """Print the sum of a and b"""
 
     # Import 'add' function from module 'add_0'
