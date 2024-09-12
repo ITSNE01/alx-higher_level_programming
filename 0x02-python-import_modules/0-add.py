@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__":
-    """
-    It prints the sum of two numbers (a and b).
-    """
+if __name__ == "__main__";
+    """Print the sum of a and b"""
+
     # Importing the 'add' function from the module 'add_0'
     from add_0 import add
     a = 1
