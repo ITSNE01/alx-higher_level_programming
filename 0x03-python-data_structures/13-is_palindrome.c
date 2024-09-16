@@ -33,10 +33,9 @@ int is_palindrome(listint_t **head)
         return (1);
 
     listint_t *slow = *head, *fast = *head, *second_half, *prev_slow;
-    listint_t *middle = NULL; // To handle odd-sized lists
+    listint_t *middle = NULL;
     int result = 1;
 
-    // Find the middle of the list
     while (fast && fast->next)
     {
         fast = fast->next->next;
@@ -44,18 +43,15 @@ int is_palindrome(listint_t **head)
         slow = slow->next;
     }
 
-    // Handle odd-sized lists
     if (fast != NULL)
     {
         middle = slow;
         slow = slow->next;
     }
 
-    // Reverse the second half
     second_half = reverse_list(slow);
-    prev_slow->next = NULL; // Terminate the first half
+    prev_slow->next = NULL;
 
-    // Compare both halves
     listint_t *first_half = *head, *second_half_copy = second_half;
     while (second_half)
     {
@@ -68,7 +64,6 @@ int is_palindrome(listint_t **head)
         second_half = second_half->next;
     }
 
-    // Restore the second half (optional)
     second_half_copy = reverse_list(second_half_copy);
     if (middle)
     {
