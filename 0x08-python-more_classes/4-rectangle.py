@@ -8,6 +8,7 @@ This module provides a simple Rectangle class.
 class Rectangle:
     """A Rectangle class with attributes width and height, and
     methods area, perimeter, print, str, and repr"""
+    
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -48,7 +49,7 @@ class Rectangle:
         return total
 
     def __repr__(self):
-        """Returns a string representation of the rectangle that can recreate an instance."""
+        """Returns a str repr of rectangle that can recreate an instance."""
         return f"Rectangle({self.__width}, {self.__height})"
 
     def area(self):
@@ -56,7 +57,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """Returns the perimeter of the rectangle. If width or height is 0, returns 0."""
+        """Returns perimeter of rectangle. If width/height is 0, returns 0."""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
