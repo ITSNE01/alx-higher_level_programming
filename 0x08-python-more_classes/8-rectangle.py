@@ -12,6 +12,7 @@ class Rectangle:
     number_of_instances and print_symbol. It also includes a static method to compare
     rectangles based on their area.
     """
+
     number_of_instances = 0
     print_symbol = "#"
 
