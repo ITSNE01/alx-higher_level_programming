@@ -2,17 +2,22 @@
 """
 This is the "Rectangle" module.
 
-This module provides a simple Rectangle class.
+This module provides a simple Rectangle class with methods and attributes.
 """
 
 
 class Rectangle:
-    """A Rectangle class with attributes width and height, and
-    methods area, perimeter, print, str, and repr
+    """A Rectangle class with attributes width, height, and
+    methods area, perimeter, print, str, repr, and deletion message.
+    It also tracks the number of instances of the class.
     """
+    # Public class attribute
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1  # Increment on instantiation
 
     @property
     def width(self):
@@ -38,19 +43,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-    def __str__(self):
-        total = ""
-        if self.__height == 0 or self.__width == 0:
-            return total
-        for i in range(self.__height):
-            total += ("#" * self.__width)
-            if i != self.__height - 1:
-                total += "\n"
-        return total
-
-    def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__height})"
-
     def area(self):
         return self.__width * self.__height
 
@@ -58,3 +50,15 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+
+    def __repr__(self):
+        return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
