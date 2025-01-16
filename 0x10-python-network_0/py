@@ -1,0 +1,47 @@
+0-body_size.sh:3:7: E225 missing whitespace around operator
+0-body_size.sh:3:20: E225 missing whitespace around operator
+1-body.sh:3:7: E225 missing whitespace around operator
+2-delete.sh:3:7: E225 missing whitespace around operator
+2-delete.sh:3:15: E225 missing whitespace around operator
+3-methods.sh:3:7: E225 missing whitespace around operator
+3-methods.sh:3:37: E225 missing whitespace around operator
+3-methods.sh:3:44: E225 missing whitespace around operator
+4-header.sh:3:7: E225 missing whitespace around operator
+4-header.sh:3:10: E225 missing whitespace around operator
+5-post_params.sh:3:7: E225 missing whitespace around operator
+5-post_params.sh:3:10: E225 missing whitespace around operator
+5-post_params.sh:3:18: E225 missing whitespace around operator
+5-post_params.sh:3:80: E501 line too long (84 > 79 characters)
+README.md:6:1: E112 expected an indented block
+README.md:6:5: E211 whitespace before '('
+README.md:6:35: E211 whitespace before '('
+README.md:6:80: E501 line too long (169 > 79 characters)
+README.md:9:80: E501 line too long (105 > 79 characters)
+README.md:11:1: E112 expected an indented block
+README.md:28:54: E211 whitespace before '('
+README.md:30:80: E501 line too long (113 > 79 characters)
+README.md:31:80: E501 line too long (120 > 79 characters)
+README.md:33:80: E501 line too long (89 > 79 characters)
+README.md:39:53: E211 whitespace before '('
+README.md:39:59: E225 missing whitespace around operator
+README.md:39:80: E501 line too long (80 > 79 characters)
+README.md:42:56: E261 at least two spaces before inline comment
+README.md:42:57: E262 inline comment should start with '# '
+README.md:43:80: E501 line too long (96 > 79 characters)
+README.md:44:41: E225 missing whitespace around operator
+README.md:44:42: E211 whitespace before '('
+README.md:45:78: E211 whitespace before '('
+README.md:45:80: E501 line too long (93 > 79 characters)
+README.md:46:58: E261 at least two spaces before inline comment
+README.md:46:59: E262 inline comment should start with '# '
+README.md:47:37: E211 whitespace before '('
+README.md:48:49: E225 missing whitespace around operator
+README.md:48:80: E501 line too long (90 > 79 characters)
+README.md:49:49: E225 missing whitespace around operator
+README.md:49:80: E501 line too long (98 > 79 characters)
+README.md:50:19: E211 whitespace before '('
+README.md:50:80: E225 missing whitespace around operator
+README.md:50:80: E501 line too long (209 > 79 characters)
+README.md:50:148: E225 missing whitespace around operator
+README.md:51:80: E501 line too long (155 > 79 characters)
+README.md:51:120: E211 whitespace before '('
